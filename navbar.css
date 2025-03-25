@@ -7,42 +7,60 @@
     --coloreSfondoPiccolaNav: #f9fafa;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     font-family: RalewayX, arial, sans-serif;
 }
 
-div.registra-aiuto ul {
+div.registra-aiuto {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: var(--coloreSfondoPiccolaNav);
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
 }
 
-ul.registra li {
+a {
     color: var(--colorePrimario);
     list-style: none;
     font-size: 0.8rem;
+    text-decoration: none;
+}
+
+a.registra::after {
+    content: "|";
+    color: rgb(215, 215, 215);
+    padding: 10px;
 }
 
 li a {
     text-decoration: none;
 }
 
-ul.bottoni li img {
-    width: 133px;
-}
-
-div.logo-bottoni ul {
+div.logo-bottoni {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    padding: 15px;
+    box-shadow: 2px 3px 5px rgb(223, 223, 223);
 }
 
-ul.bottoni li {
+div.logo img {
+    width: 133px;
+}
+
+div.bottoni ul {
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 18px;
 }
 
 li button {
@@ -62,4 +80,16 @@ li.button2 button {
     border: 1px solid var(--colorePrimario);
     background-color: var(--colorePrimario);
     color: white;
+}
+
+button img.app {
+    width: 21px;
+    padding-right: 10px;
+}
+
+button img.user {
+    width: 24px;
+    padding-right: 10px;
+    color: white;
+    filter: invert(100%);
 }
