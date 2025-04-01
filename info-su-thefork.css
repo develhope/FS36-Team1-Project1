@@ -1,0 +1,17 @@
+body {
+    font-family: RalewayX,arial,sans-serif;
+    padding-left: 18%;
+    padding-right: 19%;
+    letter-spacing: 0;
+}
+
+
+p {
+    color: hsl(218, 9%, 17%);
+    font-size: .875rem;
+    font-weight: 300;
+}
+        
+a {
+    color: hsl(218, 9%, 17%);
+}
