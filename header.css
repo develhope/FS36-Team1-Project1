@@ -1,0 +1,115 @@
+:root {
+  --colorePrimario: #00665c;
+  --coloreSecondario: #002925;
+  --coloreTitoliBianchi: white;
+  --coloreTestiNeri: #272a2f;
+  --coloreBackgroundFooter: #000000;
+  --coloreSfondoPiccolaNav: #f9fafa;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", arial, sans-serif;
+}
+
+div.registra-aiuto {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--coloreSfondoPiccolaNav);
+  margin: 0px;
+  padding: 10px;
+}
+
+a {
+  color: var(--colorePrimario);
+  list-style: none;
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: 550;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+span.divisore {
+  color: rgb(215, 215, 215);
+  padding: 2px;
+}
+
+a.registra:hover::after {
+  text-decoration: none;
+}
+
+div a {
+  text-decoration: none;
+}
+
+div a:hover {
+  cursor: pointer;
+}
+
+div.logo-bottoni {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 7px 16px rgb(233, 233, 233);
+}
+
+div.logo img {
+  width: 133px;
+}
+
+div.bottoni ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+}
+
+li button {
+  display: flex;
+  background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+li.button1 button {
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li.button2 button {
+  border-radius: 3px;
+  border: 1px solid var(--colorePrimario);
+  background-color: var(--colorePrimario);
+  color: white;
+  cursor: pointer;
+}
+
+li.button1:hover {
+  border-radius: 6px;
+  border: 1px solid var(--coloreSecondario);
+}
+
+button img.app {
+  width: 21px;
+  padding-right: 10px;
+}
+
+button img.user {
+  width: 24px;
+  padding-right: 10px;
+  color: white;
+  filter: invert(100%);
+}
