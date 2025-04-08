@@ -1,6 +1,6 @@
 :root {
   --colorePrimario: #00665c;
-  --coloreSecondario: #002925;
+  --coloreSecondario: #01564a;
   --coloreTitoliBianchi: white;
   --coloreTestiNeri: #272a2f;
   --coloreBackgroundFooter: #000000;
@@ -16,6 +16,8 @@
 body {
   font-family: "Raleway", arial, sans-serif;
 }
+
+/* NAVBAR IN ALTO */
 
 div.registra-aiuto {
   display: flex;
@@ -114,6 +116,8 @@ button img.user {
   filter: invert(100%);
 }
 
+/* SEZIONE RETTANGOLO */
+
 div.centrale {
   width: 100vw;
   display: flex;
@@ -129,7 +133,7 @@ div.verde {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  background-color: var(--colorePrimario);
+  background-image: linear-gradient(to right, #01564a, #00665c);
 }
 
 div.prenota {
@@ -150,14 +154,58 @@ div.piatto {
   overflow: hidden;
 }
 
-div.cont-festival {
+/* SEZIONE THEFORK FESTIVAL */
+
+div.container-festival {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 div.festival img {
+  width: 992px;
   border-radius: 20px;
+}
+
+/* SEZIONE SCELTI DA THEFORK */
+
+div.container-scelti {
+  display: flex;
+}
+
+div.scelti span {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+div.cards {
+  width: 320px;
+  height: 336px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.card1 img,
+div.card2 img,
+div.card3 img {
+  width: 296px;
+}
+
+h3.titolo {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+span.testo {
+  font-size: 13px;
+}
+
+span.scopri {
+  font-size: 12px;
+  font-weight: 550;
+  color: var(--coloreSecondario);
 }
