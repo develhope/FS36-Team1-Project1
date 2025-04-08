@@ -1,0 +1,646 @@
+/* Stili generali */
+body {
+  font-family: 'RalewayX, arial, sans-serif';
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Sezione Gift Card */
+#gift-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px; 
+  margin: 20px auto;
+}
+
+#gift-card img {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+#gift-card .gift-card-content {
+  width: 40%;
+  text-align: center;
+}
+
+#gift-card h2 {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#gift-card p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#gift-card button {
+  background-color: #00665c;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#gift-card button:hover {
+  background-color: #002925;
+} 
+
+/* Sezione Scelti per te */
+#scelti-per-te {
+  padding:5px;
+  background-color: #ffffff; 
+  margin-top: 10px;
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+#scelti-per-te h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+  font-family: 'RalewayX, arial, sans-serif';
+}
+
+.scelti-container {
+  display: flex;
+  justify-content:center;
+  flex-wrap: nowrap; 
+  gap: 10px; 
+}
+
+.card-scelti {
+  background-color: #fff;
+  border: none; 
+  border-radius: 8px;
+  width: 18%; 
+  padding: 15px;
+  text-align: left; 
+  font-family: 'RalewayX, arial, sans-serif'; 
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.card-scelti:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd; 
+}
+
+.card-scelti img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; 
+  border-radius: 2px 2px 0 0;
+  object-fit: cover; 
+}
+
+.card-scelti h3 {
+  font-size: 16px; 
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold; 
+  display: inline-block;
+  width: 75%; 
+}
+
+.card-scelti span {
+  font-size: 14px;
+  color: #000000; 
+  text-align: right; 
+  display: inline-block;
+  vertical-align: auto;
+}
+
+.card-scelti p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card-scelti button {
+  background-color: #000; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px; 
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'RalewayX, arial, sans-serif';
+}
+
+.card-scelti p button {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+/* Sezione Top 100 */
+#Top100 {
+  padding: 30px;
+  background-color: hsl(174, 100%, 8%);
+  margin: 40px auto;
+  max-width: 1200px; 
+  border-radius: 10px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Contenitore di testo */
+.top100-text {
+  width: 50%; 
+  text-align: left;
+  color: #ffffff;
+  font-family: 'RalewayX', arial, sans-serif;
+}
+
+.top100-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px; 
+}
+
+.top100-text .btn {
+  display: flex;
+  color: #ffffff;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.top100-text .btn:hover {
+  background-color: #004a42; 
+  color: #ffffff;
+}
+
+/* Contenitore immagine */
+.top100-image {
+  width: 50%;
+  margin-right: 0;
+  
+}
+
+.top100-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+/* Sezione Ristoranti più richiesti a Milano */
+#ristoranti-piu-richiesti-a-Milano {
+  padding:5px;
+  background-color: #ffffff; 
+  margin-top: 10px;
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+#ristoranti-piu-richiesti-a-Milano h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+  font-family: 'RalewayX, arial, sans-serif';
+}
+
+.Milano-container {
+  display: flex;
+  justify-content:center;
+  flex-wrap: nowrap; 
+  gap: 10px; 
+}
+
+.card-Milano {
+  background-color: #fff;
+  border: none; 
+  border-radius: 8px;
+  width: 18%; 
+  padding: 15px;
+  text-align: left; 
+  font-family: 'RalewayX, arial, sans-serif'; 
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.card-Milano:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd; 
+}
+
+.card-Milano img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; 
+  border-radius: 2px 2px 0 0;
+  object-fit: cover; 
+}
+
+.card-Milano h3 {
+  font-size: 16px; 
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  width: 75%; 
+}
+
+.card-Milano span {
+  font-size: 14px;
+  color: #000000; 
+  text-align: right; 
+  display: inline-block;
+  vertical-align: auto;
+}
+
+.card-Milano p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card-Milano button {
+  background-color: #000; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px; 
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'RalewayX, arial, sans-serif';
+}
+
+.card-Milano p button {
+  display: inline-block;
+  margin-right: 10px;/
+}
+
+/* Sezione Ristoranti più richiesti a Roma */
+#ristoranti-piu-richiesti-a-Roma {
+  padding:5px;
+  background-color: #ffffff; 
+  margin-top: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#ristoranti-piu-richiesti-a-Roma h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+  font-family: 'RalewayX, arial, sans-serif';
+}
+
+.Roma-container {
+  display: flex;
+  justify-content:center;
+  flex-wrap: nowrap; 
+  gap: 10px; 
+}
+
+.card-Roma {
+  background-color: #fff;
+  border: none; 
+  border-radius: 8px;
+  width: 18%;
+  padding: 15px;
+  text-align: left; 
+  font-family: 'RalewayX, arial, sans-serif';
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.card-Roma:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd; 
+}
+
+.card-Roma img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 2px 2px 0 0;
+  object-fit: cover;
+}
+
+.card-Roma h3 {
+  font-size: 16px; 
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  width: 75%; 
+}
+
+.card-Roma span {
+  font-size: 14px;
+  color: #000000; 
+  text-align: right; 
+  display: inline-block;
+  vertical-align: auto;
+}
+
+.card-Roma p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card-Roma button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'RalewayX, arial, sans-serif';
+}
+
+.card-Roma p button {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+/* Sezione Ristoranti più richiesti a Torino  */
+#ristoranti-piu-richiesti-a-Torino {
+  padding:5px;
+  background-color: #ffffff; 
+  margin-top: 10px;
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+#ristoranti-pu-richiesti-a-Torino h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+  font-family: 'RalewayX, arial, sans-serif';
+}
+
+.Torino-container {
+  display: flex;
+  justify-content:center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.card-Torino {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 18%;
+  padding: 15px;
+  text-align: left;
+  font-family:'RalewayX, arial, sans-serif';
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.card-Torino:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd; 
+}
+
+.card-Torino img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 2px 2px 0 0;
+  object-fit: cover;
+}
+
+.card-Torino h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  width: 75%;
+}
+
+.card-Torino span {
+  font-size: 14px;
+  color: #000000;
+  text-align: right;
+  display: inline-block;
+  vertical-align: auto;
+}
+
+.card-Torino p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card-Torino button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'RalewayX, arial, sans-serif';
+}
+
+.card-Torino p button {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+/* Sezione Ristoranti più richiesti a Firenze */
+#ristoranti-piu-richiesti-a-Firenze {
+  padding:5px;
+  background-color: #ffffff; 
+  margin-top: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#ristoranti-piu-richiesti-a-Firenze h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+  font-family: 'RalewayX, arial, sans-serif';
+}
+
+.Firenze-container {
+  display: flex;
+  justify-content:center;
+  flex-wrap: nowrap; 
+  gap: 10px; 
+}
+
+.card-Firenze {
+  background-color: #fff;
+  border: none; 
+  border-radius: 8px;
+  width: 18%; 
+  padding: 15px;
+  text-align: left; 
+  font-family:'RalewayX, arial, sans-serif';
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.card-Firenze:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd; 
+}
+
+.card-Firenze img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; 
+  border-radius: 2px 2px 0 0;
+  object-fit: cover; 
+}
+
+.card-Firenze h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold; 
+  display: inline-block;
+  width: 75%; 
+}
+
+.card-Firenze span {
+  font-size: 14px;
+  color: #000000; 
+  text-align: right; 
+  display: inline-block;
+  vertical-align: auto;
+}
+
+.card-Firenze p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card-Firenze button {
+  background-color: #000; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px; 
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'RalewayX, arial, sans-serif'
+}
+
+.card-Firenze p button {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Sezione Ristoranti più richiesti a Bologna */
+#ristoranti-piu-richiesti-a-Bologna {
+  padding:5px;
+  background-color: #ffffff; 
+  margin-top: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#ristoranti-piu-richiesti-a-Bologna h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+  font-family: 'RalewayX, arial, sans-serif';
+}
+
+.Bologna-container {
+  display: flex;
+  justify-content:center;
+  flex-wrap: nowrap; 
+  gap: 10px; 
+
+.card-Bologna {
+  background-color: #fff;
+  border: none; 
+  border-radius: 8px;
+  width: 18%; 
+  padding: 15px;
+  text-align: left; 
+  font-family: 'RalewayX, arial, sans-serif';
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.card-Bologna:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd; 
+}
+
+.card-Bologna img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; 
+  border-radius: 2px 2px 0 0;
+  object-fit: cover; 
+}
+
+.card-Bologna h3 {
+  font-size: 16px; 
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  width: 75%; 
+}
+
+.card-Bologna span {
+  font-size: 14px;
+  color: #000000; 
+  text-align: right;
+  display: inline-block;
+  vertical-align: auto;
+}
+
+.card-Bologna p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card-Bologna button {
+  background-color: #000; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px; 
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'RalewayX, arial, sans-serif'
+}
+
+.card-Bologna p button {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+/* Sezione Come Funziona */
+
