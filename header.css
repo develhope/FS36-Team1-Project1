@@ -99,9 +99,11 @@ li.button2 button {
   cursor: pointer;
 }
 
-li.button1:hover {
+li.button1:hover button {
   border-radius: 6px;
   border: 1px solid var(--coloreSecondario);
+  background-color: #eaf4f2;
+  color: var(--coloreSecondario);
 }
 
 button img.app {
@@ -133,7 +135,9 @@ div.verde {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  background-image: linear-gradient(to right, #01564a, #00665c);
+  background-image: url("file:///Users/silvia/Documents/GitHub/FS36-Team1-Project1/immagine-piatto.webp"), linear-gradient(to right, #01564a, #00665c);
+  background-repeat: no-repeat;
+  background-position: 128%;
 }
 
 div.prenota {
