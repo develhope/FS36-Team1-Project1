@@ -149,3 +149,15 @@ div.citta img {
 div.piatto {
   overflow: hidden;
 }
+
+div.cont-festival {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+div.festival img {
+  border-radius: 20px;
+}
