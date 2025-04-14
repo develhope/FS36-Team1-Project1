@@ -1,0 +1,146 @@
+:root{
+    --button-hover-color: #004D45;
+    --button-hover-background: #EEF6F5;
+    --button-clicked-color: #00332E;
+    --button-clicked-background: #BDDBD8;
+    --swiper-navigation-size: 16px;
+}
+
+.title{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    font-family: "Raleway",arial,sans-serif;
+    
+
+}
+.top-level{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.show-more {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+    color: hsl(174, 100%, 20%);
+}
+
+button.show-more:hover{
+    background-color: #EEF6F5;
+    color: var(--button-hover-color)
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: black;
+    border-color: #000000;
+    top: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: #f0f0f0;
+    border-radius: 10%;
+    border: 1px solid #ccc;
+}
+
+.swiper-button-next{
+    left: 78.5%;
+}
+
+.swiper-button-prev{
+    left: 75%;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    color: var(--button-hover-color);
+    background-color: var(--button-hover-background);
+    border-color: var(--button-hover-color);
+    border: solid 1px;
+}
+
+/*DO NOT WORK*/
+.swiper-button-next:disabled,
+.swiper-button-prev:disabled{
+    cursor: not-allowed;
+    color: hsl(220, 9%, 62%);
+}
+.swiper {
+    margin-left: auto;
+    margin-right: 20%;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
+.cards-container {
+    height: auto;
+    margin-left: 17%;
+    margin-right: 20%;
+    padding: 20px 0;
+}
+
+.swiper.cards-container{
+    display: flex;
+    width: 65%;
+}
+
+
+.swiper-wrapper {
+    display: flex;
+    width: auto; 
+    height: auto;
+    cursor: pointer;
+    align-items: stretch; 
+}
+
+.swiper-slide {
+    width: auto; 
+    flex-shrink: 0; 
+}
+
+.card {
+    position: relative;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    background-color: black;
+}
+
+img {
+    width: 100%; 
+    height: 100%;
+    border-radius: 5px 5px 5px 5px;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.city-name{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: "Raleway",arial,sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    position: absolute;  
+    bottom: 3px;           
+    left: 0;             
+    width: 100%;          
+    padding: 5px;        /* For spacing */
+    box-sizing: border-box; /* Padding in width */
+    z-index: 1;          /* It's on top of the image */
+    justify-content: left;
+    /* text-shadow: horizontal-offset vertical-offset blur-radius color; */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
+}
