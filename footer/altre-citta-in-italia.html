@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altre città in Italia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="altre-citta-in-italia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-level">
+        <div class="title">
+            <p>Altre città in Italia</p>
+        </div>
+        <div class="buttons">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="swiper cards-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Milan" src="milano.webp">
+                    </div>
+                    <span class="city-name">Milano</span>
+                </a>
+            </div>
+            <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Rome" src="roma.webp">
+                    </div>
+                    <span class="city-name">Roma</span>
+                </a>
+            </div>
+            <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Turin" src="torino.webp">
+                    </div>
+                    <span class="city-name">Torino</span>
+                </a>
+            </div>
+            <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Florence" src="firenze.webp">
+                    </div>
+                    <span class="city-name">Firenze</span>
+                </a>
+            </div>
+            <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Bologna" src="bologna.webp">
+                    </div>
+                    <span class="city-name">Bologna</span>
+                </a>
+            </div>
+            <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Naples" src="napoli.webp">
+                    </div>
+                    <span class="city-name">Napoli</span>
+                </a>
+            </div>
+            <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Venice" src="venezia.webp">
+                    </div>
+                    <span class="city-name">Venezia</span>
+                </a>
+            </div>
+            <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Verona" src="verona.webp">
+                    </div>
+                    <span class="city-name">Verona</span>
+                </a>
+            </div>
+            <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Genoa" src="genova.webp">
+                    </div>
+                    <span class="city-name">Genova</span>
+                </a>
+            </div>
+            <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Parma" src="parma.webp">
+                    </div>
+                    <span class="city-name">Parma</span>
+                </a>
+            </div>
+            <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Palermo" src="palermo.webp">
+                    </div>
+                    <span class="city-name">Palermo</span>
+                </a>
+            </div>
+             <div class="swiper-slide card">
+                <a href="#">
+                    <div class="city-image">
+                        <img alt="image-of-Brescia" src="brescia.webp">
+                    </div>
+                    <span class="city-name">Brescia</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 6,
+            spaceBetween: 15,
+            loop: false,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
