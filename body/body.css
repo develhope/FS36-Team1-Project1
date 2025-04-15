@@ -1,3 +1,8 @@
+/* - Crea classe per i codici postali dellelle card ristoranti più richiesti
+e modificane il css;
+- Crea classe per i bottoni PAY e INSIDER da rendere più piccoli del bottone "fino al 50%";
+- Sistema icona stella vuota*/
+
 /* Stili generali */
 body {
   font-family: "Raleway", arial, sans-serif;
@@ -171,6 +176,11 @@ main {
   object-fit: cover;
 }
 
+.card .name-rate{
+  display: flex;
+  justify-content: space-between;
+}
+
 .card h3 {
   font-size: 17px;
   margin-bottom: 8px;
@@ -252,7 +262,8 @@ main {
 .funzione h3 {
   font-size: 15px;
   color: #555;
-  margin: 10px 0;
+  margin: 10px 0px;
+  margin-top: 30px;
 }
 
 .funzione p {
