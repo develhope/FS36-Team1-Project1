@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="header.css" />
   </head>
   <body>
+    <!-- NAVBAR IN ALTO -->
+
     <nav>
       <div class="registra-aiuto">
         <a href="" class="registra">REGISTRA IL RISTORANTE</a>
@@ -35,33 +37,47 @@
         </div>
       </div>
     </nav>
+
+    <!-- SEZIONE RETTANGOLO VERDE -->
+
     <div class="centrale">
       <div class="verde">
         <div class="prenota">
           <h1>Prenota i migliori ristoranti per ogni occasione</h1>
-          <div class="citta">
-            <img src="location.svg" alt="Location" />
-            Milano
+          <div class="container-bianco">
+            <div class="citta">
+              <img src="location.svg" alt="Location" />
+              <p>Milano</p>
+            </div>
+            <div class="ricerca">
+              <img src="lente.svg" alt="" />
+              <input
+                type="search"
+                name="Ricerca"
+                id="ricerca"
+                placeholder="Tipo di cucina, nome del ristorante..."
+              />
+              <button class="bottone-cerca"><span>CERCA</span></button>
+            </div>
           </div>
-          <div class="ricerca">
-            <input type="search" name="Ricerca" id="ricerca" />
-            <input type="button" name="Cerca" id="cerca" />
-          </div>
-        </div>
-        <div class="piatto">
-          <img src="immagine-piatto.webp" alt="Piatto" />
         </div>
       </div>
     </div>
-    <div class="container-festival">
-      <div class="festival">
-        <a href=""><img src="the-fork-festival.jpeg" alt="Festival" /></a>
+
+    <!-- SEZIONE THEFORK PROMO -->
+
+    <div class="container-promo">
+      <div class="promo">
+        <a href=""><img src="top-promo.webp" alt="Festival" /></a>
       </div>
+    </div>
+
+    <!-- SEZIONE SCELTI DA THEFORK -->
+
+    <div class="scelti">
+      <h2>Scelti da TheFork</h2>
     </div>
     <div class="container-scelti">
-      <div class="scelti">
-        <span>Scelti da TheFork</span>
-      </div>
       <div class="cards">
         <div class="card1">
           <img src="card-scelti1.webp" alt="Card1" />
@@ -70,7 +86,7 @@
             >Ottieni il triplo degli Yums per ogni prenotazione nella selezione
             di ristoranti "Yums x3"</span
           >
-          <span class="scopri">SCOPRI I RISTORANTI</span>
+          <h3 class="scopri">SCOPRI I RISTORANTI</h3>
         </div>
         <div class="card2">
           <img src="card-scelti2.webp" alt="Card1" />
@@ -79,7 +95,7 @@
             >Scopri le new entry su TheFork e prova con noi i nuovi ristoranti
             della tua città che proprio non...</span
           >
-          <span class="scopri">SCOPRI I RISTORANTI</span>
+          <h3 class="scopri">SCOPRI I RISTORANTI</h3>
         </div>
         <div class="card3">
           <img src="card-scelti3.webp" alt="Card1" />
@@ -88,7 +104,7 @@
             >La selezione dei tavoli più apprezzati del momento, premiati dalle
             guide e dai nostri utenti</span
           >
-          <span class="scopri">SCOPRI E PRENOTA</span>
+          <h3 class="scopri">SCOPRI E PRENOTA</h3>
         </div>
       </div>
     </div>

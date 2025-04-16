@@ -1,10 +1,12 @@
 :root {
   --colorePrimario: #00665c;
-  --coloreSecondario: #01564a;
+  --coloreSecondario: #002925;
+  --coloreTerziario: #01564a;
   --coloreTitoliBianchi: white;
   --coloreTestiNeri: #272a2f;
   --coloreBackgroundFooter: #000000;
   --coloreSfondoPiccolaNav: #f9fafa;
+  --coloreGrigino: rgb(215, 215, 215);
 }
 
 * {
@@ -41,7 +43,7 @@ a:hover {
 }
 
 span.divisore {
-  color: rgb(215, 215, 215);
+  color: var(--coloreGrigino);
   padding: 2px;
 }
 
@@ -62,7 +64,7 @@ div.logo-bottoni {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  box-shadow: 0px 7px 16px rgb(233, 233, 233);
+  box-shadow: 0px 7px 16px var(--coloreGrigino);
 }
 
 div.logo img {
@@ -86,7 +88,7 @@ li button {
 }
 
 li.button1 button {
-  border: 1px solid rgb(215, 215, 215);
+  border: 1px solid var(--coloreGrigino);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -99,9 +101,11 @@ li.button2 button {
   cursor: pointer;
 }
 
-li.button1:hover {
+li.button1:hover button {
   border-radius: 6px;
-  border: 1px solid var(--coloreSecondario);
+  border: 1px solid var(--coloreTerziario);
+  background-color: #eaf4f2;
+  color: var(--coloreTerziario);
 }
 
 button img.app {
@@ -116,7 +120,7 @@ button img.user {
   filter: invert(100%);
 }
 
-/* SEZIONE RETTANGOLO */
+/* SEZIONE RETTANGOLO VERDE */
 
 div.centrale {
   width: 100vw;
@@ -133,7 +137,10 @@ div.verde {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  background-image: linear-gradient(to right, #01564a, #00665c);
+  background-image: url("file:///Users/silvia/Documents/GitHub/FS36-Team1-Project1/immagine-piatto.webp"),
+    linear-gradient(to right, #01564a, #00665c);
+  background-repeat: no-repeat;
+  background-position: 128%;
 }
 
 div.prenota {
@@ -143,20 +150,113 @@ div.prenota {
 
 h1 {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
+  padding-bottom: 40px;
+}
+
+div.citta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 245px;
+  height: 55px;
+  padding-left: 15px;
+}
+
+div.citta:hover {
+  border-radius: 8px;
+  background-color: rgb(252, 252, 252);
+}
+
+div.citta:active {
+  border: 2px solid var(--colorePrimario);
+  border-radius: 10px;
 }
 
 div.citta img {
-  width: 15px;
+  width: 13px;
+}
+
+div.citta p {
+  font-size: 16px;
+  font-weight: 550;
 }
 
 div.piatto {
   overflow: hidden;
 }
 
-/* SEZIONE THEFORK FESTIVAL */
+div.container-bianco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 764px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid var(--coloreGrigino);
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-div.container-festival {
+div.ricerca img {
+  width: 15px;
+  margin-right: 20px;
+}
+
+div.ricerca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid var(--coloreGrigino);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 0px;
+}
+
+div input#ricerca {
+  font-family: "Raleway", arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  border-radius: 8px;
+  width: 320px;
+  height: 51px;
+  appearance: none;
+  border: 0px;
+  padding-right: 10px;
+}
+
+div input::placeholder {
+  color: rgb(179, 179, 179);
+}
+
+div input#ricerca:active {
+  border: 2px solid var(--colorePrimario);
+  border-radius: 10px;
+}
+
+div input#ricerca:hover {
+  border-radius: 8px;
+  background-color: rgb(252, 252, 252);
+}
+
+div button.bottone-cerca {
+  width: 100px;
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid var(--colorePrimario);
+  background-color: var(--colorePrimario);
+  color: white;
+  cursor: pointer;
+  font-family: "Raleway", arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* SEZIONE THEFORK PROMO */
+
+div.container-promo {
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -165,47 +265,56 @@ div.container-festival {
   margin-bottom: 40px;
 }
 
-div.festival img {
+div.promo img {
   width: 992px;
   border-radius: 20px;
 }
 
 /* SEZIONE SCELTI DA THEFORK */
 
-div.container-scelti {
-  display: flex;
-}
-
-div.scelti span {
+div.scelti h2 {
   font-weight: 500;
   font-size: 22px;
+  padding-left: 230px;
+}
+
+div.container-scelti {
+  display: flex;
+  justify-content: center;
 }
 
 div.cards {
-  width: 320px;
+  width: 100%;
   height: 336px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  padding: 250px;
+  padding-left: 250px;
+  gap: 40px;
 }
 
 div.card1 img,
 div.card2 img,
 div.card3 img {
   width: 296px;
+  border-radius: 5px;
 }
 
 h3.titolo {
   font-size: 16px;
   font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 span.testo {
   font-size: 13px;
 }
 
-span.scopri {
+h3.scopri {
   font-size: 12px;
   font-weight: 550;
-  color: var(--coloreSecondario);
+  color: var(--coloreTerziario);
+  padding-top: 10px;
 }
