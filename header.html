@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Fork - Prenota nei migliori ristoranti d'Italia</title>
     <link rel="stylesheet" href="header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- NAVBAR IN ALTO -->
@@ -77,36 +81,135 @@
     <div class="scelti">
       <h2>Scelti da TheFork</h2>
     </div>
-    <div class="container-scelti">
-      <div class="cards">
-        <div class="card1">
-          <img src="card-scelti1.webp" alt="Card1" />
-          <h3 class="titolo">Vuoi avere il triplo degli Yums?</h3>
-          <span class="testo"
-            >Ottieni il triplo degli Yums per ogni prenotazione nella selezione
-            di ristoranti "Yums x3"</span
-          >
-          <h3 class="scopri">SCOPRI I RISTORANTI</h3>
-        </div>
-        <div class="card2">
-          <img src="card-scelti2.webp" alt="Card1" />
-          <h3 class="titolo">Le novità su TheFork</h3>
-          <span class="testo"
-            >Scopri le new entry su TheFork e prova con noi i nuovi ristoranti
-            della tua città che proprio non...</span
-          >
-          <h3 class="scopri">SCOPRI I RISTORANTI</h3>
-        </div>
-        <div class="card3">
-          <img src="card-scelti3.webp" alt="Card1" />
-          <h3 class="titolo">INSIDER - Premiati da guide e utenti</h3>
-          <span class="testo"
-            >La selezione dei tavoli più apprezzati del momento, premiati dalle
-            guide e dai nostri utenti</span
-          >
-          <h3 class="scopri">SCOPRI E PRENOTA</h3>
-        </div>
+    <div class="swiper container-scelti">
+      <div class="buttons">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="swiper-wrapper cards">
+        <!-- CARD 1 -->
+
+        <a href="" class="cliccabile">
+          <div class="swiper-slide card1">
+            <div class="interno-card">
+              <img src="card-scelti1.webp" alt="Card1" />
+              <div class="testi">
+                <h3 class="titolo">Vuoi avere il triplo degli Yums?</h3>
+                <span class="testo"
+                  >Ottieni il triplo degli Yums per ogni prenotazione nella
+                  selezione di ristoranti "Yums x3"</span
+                >
+                <h3 class="scopri">SCOPRI I RISTORANTI</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 2 -->
+
+        <a href="" class="cliccabile">
+          <div class="swiper-slide card2">
+            <div class="interno-card">
+              <img src="card-scelti2.webp" alt="Card1" />
+              <div class="testi">
+                <h3 class="titolo">Le novità su TheFork</h3>
+                <span class="testo"
+                  >Scopri le new entry su TheFork e prova con noi i nuovi
+                  ristoranti della tua città che proprio non...</span
+                >
+                <h3 class="scopri">SCOPRI I RISTORANTI</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 3 -->
+
+        <a href="" class="cliccabile">
+          <div class="swiper-slide card3">
+            <div class="interno-card">
+              <img src="card-scelti3.webp" alt="Card1" />
+              <div class="testi">
+                <h3 class="titolo">INSIDER - Premiati da guide e utenti</h3>
+                <span class="testo"
+                  >La selezione dei tavoli più apprezzati del momento, premiati
+                  dalle guide e dai nostri utenti</span
+                >
+                <h3 class="scopri">SCOPRI E PRENOTA</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 4 -->
+
+        <a href="" class="cliccabile">
+          <div class="swiper-slide card3">
+            <div class="interno-card">
+              <img src="card-michelin.webp" alt="Card1" />
+              <div class="testi">
+                <h3 class="titolo">Guida MICHELIN 2025</h3>
+                <span class="testo"
+                  >Scopri la selezione di ristoranti della Guida MICHELIN 2025
+                  prenotabili su TheFork!</span
+                >
+                <h3 class="scopri">SCOPRI E PRENOTA</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 5 -->
+
+        <a href="" class="cliccabile">
+          <div class="swiper-slide card3">
+            <div class="interno-card">
+              <img src="card-yums.webp" alt="Card1" />
+              <div class="testi">
+                <h3 class="titolo">Ristoranti che accettano gli Yums</h3>
+                <span class="testo"
+                  >Hai più di 1000 Yums? Congratulazioni! Ottieni uno sconto
+                  fedeltà</span
+                >
+                <h3 class="scopri">SCOPRI I RISTORANTI</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 6 -->
+
+        <a href="" class="cliccabile">
+          <div class="swiper-slide card3">
+            <div class="interno-card">
+              <img src="card-pay.webp" alt="Card1" />
+              <div class="testi">
+                <h3 class="titolo">Ottieni 50 Yums in più!</h3>
+                <span class="testo"
+                  >Paga il conto direttamente dall'app con TheFork Pay e ottieni
+                  50 Yums extra</span
+                >
+                <h3 class="scopri">SCOPRI E PRENOTA</h3>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
+
+    <!-- SCRIPT SWIPER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: false,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
