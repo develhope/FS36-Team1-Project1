@@ -276,7 +276,7 @@ div.promo img {
 div.scelti h2 {
   font-weight: 550;
   font-size: 22px;
-  padding-left: 230px;
+  padding: 0px 0px 20px 230px;
 }
 
 a.cliccabile {
@@ -308,6 +308,7 @@ div.card1,
 div.card2,
 div.card3 {
   min-height: 336px;
+  padding-bottom: 50px;
 }
 
 div.interno-card:hover {
