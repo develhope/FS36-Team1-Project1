@@ -7,6 +7,10 @@
   --coloreBackgroundFooter: #000000;
   --coloreSfondoPiccolaNav: #f9fafa;
   --coloreGrigino: rgb(215, 215, 215);
+  --button-hover-color: #004d45;
+  --button-hover-background: #eef6f5;
+  --button-clicked-color: #00332e;
+  --button-clicked-background: #bddbd8;
   --swiper-navigation-size: 16px;
 }
 
@@ -284,9 +288,9 @@ a.cliccabile {
 }
 
 div.container-slide1 {
-	width: 100%;
-	margin: 0 auto;
-	max-width: 992px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 992px;
 }
 
 div.container-scelti {
@@ -359,10 +363,6 @@ div.testi h3.scopri {
   padding-top: 10px;
 }
 
-.buttons {
-  position: relative;
-}
-
 .swiper {
   margin-left: auto;
   margin-right: 20%;
@@ -373,7 +373,7 @@ div.testi h3.scopri {
   z-index: 1;
   display: block;
   width: 100%;
-  padding: 10px 10px 10px 10px !important;
+  padding: 10px 10px 10px 10px;
 }
 
 .swiper-wrapper {
@@ -385,17 +385,21 @@ div.testi h3.scopri {
   flex-shrink: 0;
 }
 
+.buttons {
+  position: relative;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: black;
   border-color: #000000;
   /* top: 30px; */
-  width: 45px;
-  height: 45px;
+  width: 32px;
+  height: 32px;
   background-color: #f0f0f0;
   border-radius: 10%;
   border: 1px solid #ccc;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
