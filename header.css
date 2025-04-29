@@ -276,31 +276,39 @@ div.promo img {
 div.scelti h2 {
   font-weight: 550;
   font-size: 22px;
-  padding-left: 230px;
+  padding: 0px 0px 20px 230px;
 }
 
 a.cliccabile {
   all: unset;
 }
 
+div.container-slide1 {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 992px;
+}
+
 div.container-scelti {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 div.cards {
-  width: 100%;
+  /* width: 100%; */
+  /* padding: 10px 20px; */
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  padding: 40px 250px 50px 250px;
-  gap: 16px;
+  /* padding: 40px 250px 50px 250px; */
+  /* gap: 16px; */
 }
 
 div.card1,
 div.card2,
 div.card3 {
   min-height: 336px;
+  padding-bottom: 50px;
 }
 
 div.interno-card:hover {
@@ -308,26 +316,28 @@ div.interno-card:hover {
 }
 
 div.interno-card {
-  width: 320px;
+  /* width: 320px; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 div.card1 img,
 div.card2 img,
 div.card3 img {
-  width: 296px;
+  /* width: 296px; */
+  width: 100%;
   border-radius: 5px;
 }
 
 div.testi {
   display: flex;
   flex-direction: column;
-  padding-left: 13px;
+  /* padding-left: 13px;
   padding-top: 5px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
 }
 
 div.testi h3.titolo {
@@ -363,6 +373,7 @@ div.testi h3.scopri {
   z-index: 1;
   display: block;
   width: 100%;
+  padding: 10px 10px 10px 10px !important;
 }
 
 .swiper-wrapper {
