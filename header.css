@@ -290,9 +290,9 @@ div.container-scelti {
 
 div.cards {
   width: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   padding: 40px 250px 50px 250px;
   gap: 16px;
 }
@@ -339,7 +339,7 @@ div.testi h3.titolo {
 
 div.testi span {
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 div.testi h3.scopri {
@@ -349,15 +349,24 @@ div.testi h3.scopri {
   padding-top: 10px;
 }
 
+.buttons {
+  position: relative;
+}
+
 .swiper {
   margin-left: auto;
   margin-right: 20%;
   position: relative;
   overflow: hidden;
   list-style: none;
-  padding: 0;
+  padding: 40px 0;
   z-index: 1;
   display: block;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  /* display: flex; */
 }
 
 .swiper-slide {
@@ -369,20 +378,28 @@ div.testi h3.scopri {
 .swiper-button-next {
   color: black;
   border-color: #000000;
-  top: 30px;
+  /* top: 30px; */
   width: 45px;
   height: 45px;
   background-color: #f0f0f0;
   border-radius: 10%;
   border: 1px solid #ccc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
 .swiper-button-next {
-  left: 78.5%;
+  /* left: 78.5%; */
+  right: 10px;
+  left: auto;
 }
 
 .swiper-button-prev {
-  left: 75%;
+  /* left: 75%; */
+  left: 10px;
+  right: auto;
 }
 
 .swiper-button-next:hover,
