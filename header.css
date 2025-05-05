@@ -8,6 +8,12 @@
   --coloreSfondoPiccolaNav: #f9fafa;
   --coloreGrigino: rgb(215, 215, 215);
   --swiper-navigation-size: 16px;
+  --button-hover-color: #004d45;
+  --button-hover-background: #eef6f5;
+  --button-clicked-color: #00332e;
+  --button-clicked-background: #bddbd8;
+  --swiper-navigation-size: 16px;
+  --green-thefork: hsl(174, 100%, 20%);
 }
 
 * {
@@ -105,7 +111,7 @@ li.button2 button {
 li.button1:hover button {
   border-radius: 6px;
   border: 1px solid var(--coloreTerziario);
-  background-color: #eaf4f2;
+  background-color: var(--button-hover-background);
   color: var(--coloreTerziario);
 }
 
@@ -273,6 +279,13 @@ div.promo img {
 
 /* SEZIONE SCELTI DA THEFORK */
 
+.scelti-bottoni {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+}
+
 div.scelti h2 {
   font-weight: 550;
   font-size: 22px;
@@ -359,11 +372,30 @@ div.testi h3.scopri {
   padding-top: 10px;
 }
 
+section {
+  margin-left: 18%;
+  margin-right: 15%;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
 .buttons {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .swiper {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+  padding: 10px 10px 0px 10px !important;
+}
+
+/* .swiper {
   margin-left: auto;
   margin-right: 20%;
   position: relative;
@@ -374,10 +406,14 @@ div.testi h3.scopri {
   display: block;
   width: 100%;
   padding: 10px 10px 10px 10px !important;
-}
+} */
 
 .swiper-wrapper {
-  /* display: flex; */
+  display: flex;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  align-items: stretch; /* Assicura che tutte le slide abbiano la stessa altezza */
 }
 
 .swiper-slide {
@@ -387,18 +423,16 @@ div.testi h3.scopri {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: black;
+  color: var(--green-thefork);
   border-color: #000000;
-  /* top: 30px; */
   width: 45px;
   height: 45px;
-  background-color: #f0f0f0;
   border-radius: 10%;
   border: 1px solid #ccc;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .swiper-button-next {
@@ -431,5 +465,11 @@ div.testi h3.scopri {
 .swiper-button-prev.swiper-button-disabled {
   cursor: not-allowed;
   color: hsl(220, 9%, 62%);
-  pointer-events: auto;
+}
+.swiper-button-prev {
+  margin-left: auto;
+}
+
+.swiper-button-next {
+  margin-left: 30px;
 }
