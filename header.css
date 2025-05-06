@@ -302,20 +302,20 @@ div.container-slide1 {
   max-width: 992px;
 }
 
-div.container-scelti {
-  /* display: flex;
-  justify-content: center; */
-}
-
-div.cards {
-  /* width: 100%; */
-  /* padding: 10px 20px; */
-  /* display: flex;
+/* div.container-scelti {
+  display: flex;
   justify-content: center;
-  align-items: center; */
-  /* padding: 40px 250px 50px 250px; */
-  /* gap: 16px; */
-}
+} */
+
+/* div.cards {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 250px 50px 250px;
+  gap: 16px;
+} */
 
 div.card1,
 div.card2,
@@ -362,7 +362,7 @@ div.testi h3.titolo {
 
 div.testi span {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 div.testi h3.scopri {
@@ -464,7 +464,10 @@ section {
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
   cursor: not-allowed;
-  color: hsl(220, 9%, 62%);
+  background-color: #ecedef;
+  color: #959ba7;
+  pointer-events: auto;
+  opacity: 0.35;
 }
 .swiper-button-prev {
   margin-left: auto;
