@@ -32,6 +32,7 @@ main {
   justify-content: space-between;
   background-color: #ffffff;
   max-width: 1000px;
+  margin: 0;
 }
 .gift-card-image {
   width: 50%;
@@ -271,6 +272,7 @@ main {
   text-align:left;
   padding: 40px 20px;
   background-color: white;
+  margin: 0;
 }
 
 #come-funziona h2 {
