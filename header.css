@@ -362,7 +362,7 @@ div.testi h3.titolo {
 
 div.testi span {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 div.testi h3.scopri {
@@ -464,7 +464,10 @@ section {
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
   cursor: not-allowed;
-  color: hsl(220, 9%, 62%);
+  background-color: #ecedef;
+  color: #959ba7;
+  pointer-events: auto;
+  opacity: 0.35;
 }
 .swiper-button-prev {
   margin-left: auto;
