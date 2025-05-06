@@ -1,8 +1,13 @@
-/* - Crea classe per i codici postali dellelle card ristoranti più richiesti
-e modificane il css;
-- Crea classe per i bottoni PAY e INSIDER da rendere più piccoli del bottone "fino al 50%";
-- Sistema icona stella vuota*/
 
+:root{
+    --button-hover-color: #004D45;
+    --button-hover-background: #EEF6F5;
+    --button-clicked-color: #00332E;
+    --button-clicked-background: #BDDBD8;
+    --swiper-navigation-size: 16px;
+    --green-thefork: hsl(174, 100%, 20%);
+    
+}
 /* Stili generali */
 body {
   font-family: "Raleway", arial, sans-serif;
@@ -139,6 +144,7 @@ main {
   margin-top: 10px;
   max-width: 1000px;
   margin: 0 auto;
+  position: relative;
 }
 
 #ristoranti-piu-richiesti h2 {
@@ -157,6 +163,7 @@ main {
   text-align: left;
   transition: box-shadow 0.3s, border-color 0.3s;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .card .tags {
@@ -183,7 +190,7 @@ main {
 
 .card h3 {
   font-size: 17px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   margin-top: 0;
   color: #333;
   font-weight: bold;
@@ -204,10 +211,36 @@ main {
   color: #666;
 }
 
+.card .ppostale {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
 .card .pmedio {
   font-size: 13px;
   margin-bottom: 15px;
   margin-top: 10px;
+}
+
+.card .pay button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 6px;
+  cursor: pointer;
+  font-size: 9px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* Header flessibile */
+#ristoranti-piu-richiesti .section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  position: relative;
 }
 
 .card button {
@@ -275,3 +308,85 @@ main {
 .funzione .svg-stelle {
   display: flex;
 }
+
+section {
+  margin-left: 18%;
+  margin-right: 18%;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+/* BUTTONS */
+
+/*SWIPER*/
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+  position: relative;
+
+}
+
+.swiper {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+.swiper-wrapper {
+  display: flex;
+  width: auto; 
+  height: auto;
+  cursor: pointer;
+  align-items: stretch; /* Assicura che tutte le slide abbiano la stessa altezza */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--green-thefork);
+  border-color: #000000;
+  width: 45px;
+  height: 45px;
+  border-radius: 10%;
+  border: 1px solid #ccc;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--button-hover-color);
+  background-color: var(--button-hover-background);
+  border-color: var(--button-hover-color);
+  border: solid 1px;
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  background-color: var(--button-clicked-background);
+  color: var(--button-clicked-color);
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  cursor: not-allowed;
+  color: hsl(220, 9%, 62%);
+}
+.swiper-button-prev{
+  margin-left: auto;
+}
+
+.swiper-button-next{
+  margin-left: 30px;
+} 
