@@ -423,7 +423,7 @@ section {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: var(--green-thefork);
+  color: #000;
   border-color: #000000;
   width: 45px;
   height: 45px;
@@ -464,10 +464,11 @@ section {
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
   cursor: not-allowed;
-  background-color: #ecedef;
-  color: #959ba7;
+  background-color: #ccc;
+  color: #000000;
   pointer-events: auto;
   opacity: 0.35;
+  border: 0px solid;
 }
 .swiper-button-prev {
   margin-left: auto;
