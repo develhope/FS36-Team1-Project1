@@ -383,6 +383,7 @@ section {
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
   cursor: not-allowed;
+  pointer-events: auto;
   color: hsl(220, 9%, 62%);
 }
 .swiper-button-prev{

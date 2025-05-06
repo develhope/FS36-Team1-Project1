@@ -157,8 +157,8 @@
       <section id="ristoranti-piu-richiesti">
         <div class="buttons">
         <h2>Ristoranti più richiesti a Milano</h2>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev prev2"></div>
+            <div class="swiper-button-next next2"></div>
         </div>
     <div class="Milano-container container swiper">
         <div class="swiper-wrapper">
@@ -262,8 +262,8 @@
       <section id="ristoranti-piu-richiesti">
         <div class="buttons">
         <h2>I ristoranti più richiesti a Roma</h2>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev prev3"></div>
+            <div class="swiper-button-next next3"></div>
         </div>
         <div class="Roma-container container swiper">
             <div class="swiper-wrapper">
@@ -368,8 +368,8 @@
       <section id="ristoranti-piu-richiesti">
         <div class="buttons">
       <h2>Ristoranti più richiesti a Torino</h2>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev prev4"></div>
+          <div class="swiper-button-next next4"></div>
       </div>
       <div class="Torino-container container swiper">
           <div class="swiper-wrapper">
@@ -425,8 +425,8 @@
       <section id="ristoranti-piu-richiesti">
         <div class="buttons">
       <h2>Ristoranti più richiesti a Firenze</h2>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev prev5"></div>
+          <div class="swiper-button-next next5"></div>
       </div>
       <div class="Firenze-container container swiper">
           <div class="swiper-wrapper">
@@ -494,8 +494,8 @@
       <section id="ristoranti-piu-richiesti">
         <div class="buttons">
       <h2>Ristoranti più richiesti a Bologna</h2>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev prev6"></div>
+          <div class="swiper-button-next next6"></div>
       </div>
       <div class="Bologna-container container swiper">
           <div class="swiper-wrapper">
@@ -590,13 +590,62 @@
       <script>
           const swiper = new Swiper('.scelti-container', {
               slidesPerView: 4,
-              spaceBetween: 10,
-              loop: true,
+              spaceBetween: 8,
+              loop: false,
             navigation: {
                   nextEl: '.swiper-button-next.next1',
                   prevEl: '.swiper-button-prev.prev1'
               }
           });
+
+          const swiper2 = new Swiper('.Milano-container', {
+              slidesPerView: 4,
+              spaceBetween: 8,
+              loop: false,
+            navigation: {
+                  nextEl: '.swiper-button-next.next2',
+                  prevEl: '.swiper-button-prev.prev2'
+              }
+            });
+
+            const swiper3 = new Swiper('.Roma-container', {
+              slidesPerView: 4,
+              spaceBetween: 8,
+              loop: false,
+            navigation: {
+                  nextEl: '.swiper-button-next.next3',
+                  prevEl: '.swiper-button-prev.prev3'
+              }
+            });
+
+            const swiper4 = new Swiper('.Torino-container', {
+              slidesPerView: 4,
+              spaceBetween: 8,
+              loop: false,
+            navigation: {
+                  nextEl: '.swiper-button-next.next4',
+                  prevEl: '.swiper-button-prev.prev4'
+              }
+            });
+            const swiper5 = new Swiper('.Firenze-container', {
+              slidesPerView: 4,
+              spaceBetween: 8,
+              loop: false,
+            navigation: {
+                  nextEl: '.swiper-button-next.next5',
+                  prevEl: '.swiper-button-prev.prev5'
+              }
+
+            });
+            const swiper6 = new Swiper('.Bologna-container', {
+              slidesPerView: 4,
+              spaceBetween: 8,
+              loop: false,
+            navigation: {
+                  nextEl: '.swiper-button-next.next6',
+                  prevEl: '.swiper-button-prev.prev6'
+              }
+            });
 
       </script>
       </section>
